@@ -1,0 +1,22 @@
+[
+  {
+    "colorHex": "#001c1e",
+    "clicked": true
+  },
+  {
+    "colorHex": "#1d9299",
+    "clicked": false
+  },
+  {
+    "colorHex": "#4acfdb",
+    "clicked": false
+  },
+  {
+    "colorHex": "#86eaf4",
+    "clicked": false
+  },
+  {
+    "colorHex": "#f4feff",
+    "clicked": false
+  }
+]
