@@ -17,14 +17,15 @@ const oldLogger = console.log;
 
 export default function Home() {
   const [swatches, setSwatches] = useState<Swatch[]>([
-    { colorHex: `#833AB4`, clicked: false },
-    { colorHex: `#C13584`, clicked: false },
-    { colorHex: `#E1306C`, clicked: false },
-    { colorHex: `#F77737`, clicked: false },
-    { colorHex: `#FFDC80`, clicked: false }
+    { colorHex: `#833AB4`, colorHsv: { h: 276, s: 68, v: 71 }, clicked: false },
+    { colorHex: `#C13584`, colorHsv: { h: 276, s: 68, v: 71 }, clicked: false },
+    { colorHex: `#E1306C`, colorHsv: { h: 276, s: 68, v: 71 }, clicked: false },
+    { colorHex: `#F77737`, colorHsv: { h: 276, s: 68, v: 71 }, clicked: false },
+    { colorHex: `#FFDC80`, colorHsv: { h: 276, s: 68, v: 71 }, clicked: false }
   ]);
   const [focusedSwatch, setFocusedSwatch] = useState<Swatch>({
     colorHex: `#833AB4`,
+    colorHsv: { h: 276, s: 68, v: 71 },
     clicked: true
   });
 
@@ -217,13 +218,13 @@ export default function Home() {
         <div id="main-container" className="flex h-screen w-screen relative">
           <aside
             id="sidebar"
-            className="bg-gradient-to-tr dark:from-stone-900 dark:to-stone-900 from-white to-stone-50 h-screen w-[297px] min-w-[297px] overflow-y-auto"
+            className="bg-gradient-to-tr dark:from-stone-900 dark:to-stone-900 from-white to-stone-50 w-[297px] min-w-[297px] overflow-y-auto"
           >
             SIDEBAR
             <pre>Swatches: {JSON.stringify(swatches, null, 2)}</pre>
           </aside>
-          <div id="main" className="w-full h-full relative flex bg-stone-800">
-            <div id="canvas" className="w-full h-full py-12 relative">
+          <div id="main" className="w-full relative flex bg-stone-800">
+            <div id="canvas" className="w-full py-12 relative">
               <div
                 id="node-container"
                 className="w-[90%] mx-auto rounded-2xl flex h-full max-h-full shadow-2xl shadow-black relative"
@@ -322,7 +323,7 @@ export default function Home() {
             </div>
             <aside
               id="adjustment-area"
-              className="h-full border-l-4 border-stone-900 py-12 px-6 bg-stone-900 overflow-y-auto w-[33%]"
+              className="border-l-4 border-stone-900 py-12 px-6 bg-stone-900 overflow-y-auto w-[33%]"
               //  text-center
             >
               Functionality <br />

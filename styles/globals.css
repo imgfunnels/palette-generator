@@ -28,7 +28,8 @@ body {
 
 #main,
 #sidebar,
-#main-container {
+#main-container,
+#adjustment-area {
   height: calc(100vh - 5rem);
 }
 
