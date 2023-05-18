@@ -212,7 +212,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full h-full relative" onClick={deselectAll}>
-        <div id="header" className="h-20 dark:bg-black w-full z-10">
+        <div id="header" className="h-20 bg-white dark:bg-black w-full z-10">
           HEADER
         </div>
         <div id="main-container" className="flex h-screen w-screen relative">
@@ -323,7 +323,7 @@ export default function Home() {
             </div>
             <aside
               id="adjustment-area"
-              className="border-l-4 border-stone-900 py-12 px-6 dark:bg-stone-900 overflow-y-auto w-[33%]"
+              className="border-l-4 dark:border-stone-900 bg-white border-stone-100 py-12 px-6 dark:bg-stone-900 overflow-y-auto w-[33%]"
               //  text-center
             >
               Functionality <br />
