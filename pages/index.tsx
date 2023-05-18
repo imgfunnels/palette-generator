@@ -223,7 +223,7 @@ export default function Home() {
             SIDEBAR
             <pre>Swatches: {JSON.stringify(swatches, null, 2)}</pre>
           </aside>
-          <div id="main" className="w-full relative flex bg-stone-800">
+          <div id="main" className="w-full relative flex dark:bg-stone-800">
             <div id="canvas" className="w-full py-12 relative">
               <div
                 id="node-container"
@@ -323,7 +323,7 @@ export default function Home() {
             </div>
             <aside
               id="adjustment-area"
-              className="border-l-4 border-stone-900 py-12 px-6 bg-stone-900 overflow-y-auto w-[33%]"
+              className="border-l-4 border-stone-900 py-12 px-6 dark:bg-stone-900 overflow-y-auto w-[33%]"
               //  text-center
             >
               Functionality <br />
