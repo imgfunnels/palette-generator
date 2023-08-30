@@ -1,1 +1,1 @@
-Pallete Generator
+# Pallete Generator
